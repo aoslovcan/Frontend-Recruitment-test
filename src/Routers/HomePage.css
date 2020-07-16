@@ -1,3 +1,53 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+
 h1{
-    color: black;
+    color: rgb(215, 183, 158);
+    font-weight: bolder ;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+
+.cover{
+
+    background-image: url(../Assets/img/bckg.jpg);
+    background-color: rgb(215, 183, 158) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    background-position: center;
+    height: 92vh; 
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.inner {
+    color:white;
+    position: sticky;
+    top: 35%;
+    text-align: center;
+    line-height: 15px;
+    
+  }
+   
+.inner p{
+   border: 6px solid rgb(215, 183, 158, 0.6);
+   font-weight: lighter;
+   background-color: rgb(255, 255, 255, 0.9);
+   line-height: normal;
+   font-style: oblique;
+   font-size: 20px;
+   text-align: justify;
+   color: black;
+   max-width: 660px;
+   margin: auto;
+   padding: 10px;
+   cursor: pointer;
+
 }

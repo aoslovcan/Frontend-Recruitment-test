@@ -1,4 +1,4 @@
- export function formValidate(data) {
+const formValidate = function(data) {
     let emailError = "";
     let messageError = "";
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -25,4 +25,6 @@
     return true;
 }
 
-
+module.exports ={
+    formValidate
+}

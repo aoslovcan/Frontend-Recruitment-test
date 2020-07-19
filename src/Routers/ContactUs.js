@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { animations, easings } from 'react-animation';
-import { formValidate } from '../Actions/FormValidation'
-
+import { formValidate } from '../Actions/FormValidation';
+import { SendData } from '../Actions/SendData';
 
 import './ContactUs.css'
 
@@ -35,7 +35,7 @@ class ContactUs extends Component {
         const isValid = formValidate(data);
 
         if (isValid) {
-            console.log(data.email + " " + data.message);
+            SendData(data);
         }
 
     }
@@ -72,6 +72,7 @@ class ContactUs extends Component {
                         </div>
 
                         <button type="submit" className="button ">send</button>
+
 
                     </form>
                 </div>
